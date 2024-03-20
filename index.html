@@ -4,7 +4,9 @@
 <head>
     <title>POPCAT CLASSIC</title>
     <meta name="author" content="Joshua O'Sullivan, Freddy Heppell, Edward Hails">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
 
     <meta name="msapplication-TileColor" content="#b721ff">
@@ -63,7 +65,7 @@
             -webkit-text-stroke-color: black;
             font-weight:900;
             font-size:80px;
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Madimi One', sans-serif;
             word-wrap: break-word;
         }
         @media(min-width:1000px) {
@@ -81,79 +83,33 @@
 </head>
 
 <body>
-<img class="title" src="imgs/popcat.svg" alt="POPCAT">
-
+<img class="title" src="imgs/popcat.svg" alt="POPCAT" >
 <div class="cat-img" id="p"></div>
 
 <script>
-    /*Preloading alternate cat image*/
-    preload = new Image();
-    preload.src = "imgs/op.png";
-
-    /*Cat elem*/
-    cat = document.getElementById("p")
-
-    /*Pop mp3s*/
-    pops = [
-        "pops/pop1.mp3",
-        "pops/pop2.mp3",
-        "pops/pop3.mp3",
-        "pops/pop4.mp3",
-    ]
-    pop_i = 0
-
-    /*Cookie utils*/
-    function getCookie(cname) {
-        var name = cname + "=";
-        var decodedCookie = decodeURIComponent(document.cookie);
-        var ca = decodedCookie.split(';');
-        for(var i = 0; i <ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) == ' ') {
-                c = c.substring(1);
-            }
-            if (c.indexOf(name) == 0) {
-                return c.substring(name.length, c.length);
-            }
-        }
-        return "";
+    var pop_counter = 0;
+    let cat = document.getElementById("p");
+     let open_popcat = function() {
+         pop_counter++;
+         cat.innerHTML = pop_counter;
+         cat.id = "op";
+         let pop_sound = new Audio("pops/pop1.mp3");
+         pop_sound.load()
+         pop_sound.play()
+     }
+    let close_popcat = function() {
+        cat.id = "p";
     }
-    function setCookie(cname, cvalue, exdays) {
-        var d = new Date();
-        d.setTime(d.getTime() + (exdays*24*60*60*1000));
-        var expires = "expires="+ d.toUTCString();
-        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-    }
+   close_popcat = () =>  setTimeout(()=>cat.id="p",200);
 
-    pop_count = getCookie("pop_count")
-    cat.innerHTML = pop_count > 0 ? pop_count : ""
+    document.addEventListener("keydown",open_popcat);
+    document.addEventListener("keyup",close_popcat);
+    document.addEventListener("pointerdown",open_popcat);
+    document.addEventListener("pointerup",close_popcat);
 
-    op_func = function(){
-        /*Chance cat image to op.jpg via css*/
-        cat.id = "op"
 
-        /*Play pop noise*/
-        a = new Audio(pops[pop_i])
-        a.load()
-        a.play()
 
-        /*Increment index for next pop noise*/
-        pop_i = (pop_i+1)%pops.length
 
-        /*Increment pop count*/
-        pop_count++
-        cat.innerHTML = pop_count
-        setCookie("pop_count",pop_count,365)
-
-        /*Fire google analytics event for pop*/
-        // gtag('event', 'pop');
-    }
-    p_func = () => setTimeout(() => cat.id = "p", 25)
-
-    document.addEventListener("pointerup", p_func)
-    document.addEventListener("keyup", p_func)
-    document.addEventListener("pointerdown", op_func)
-    document.addEventListener("keydown", op_func)
 </script>
 </body>
 </html>

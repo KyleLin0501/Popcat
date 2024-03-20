@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9052fae-3ccf-4a52-b2df-468f4012a573" name="Changes" comment="pops.mp3" />
+    <list default="true" id="b9052fae-3ccf-4a52-b2df-468f4012a573" name="Changes" comment="pops.mp3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,16 +23,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "state": "OPEN"
+      &quot;state&quot;: &quot;OPEN&quot;
     }
   ],
-  "lastFilter": {
-    "state": "OPEN"
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -54,6 +57,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/linkaiyu/Documents/大學/Web/Popcat",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,9 +68,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/imgs" />
       <recent name="$PROJECT_DIR$/pops" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/imgs" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -85,7 +89,14 @@
       <workItem from="1709367918947" duration="862000" />
       <workItem from="1709464187441" duration="3097000" />
       <workItem from="1709685703271" duration="2312000" />
-      <workItem from="1709689436743" duration="403000" />
+      <workItem from="1709689436743" duration="3922000" />
+      <workItem from="1710256039739" duration="223000" />
+      <workItem from="1710289347454" duration="467000" />
+      <workItem from="1710289848690" duration="4624000" />
+      <workItem from="1710415631589" duration="148000" />
+      <workItem from="1710416035401" duration="466000" />
+      <workItem from="1710416735915" duration="389000" />
+      <workItem from="1710842919452" duration="651000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -111,7 +122,31 @@
       <option name="project" value="LOCAL" />
       <updated>1709689710125</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="pops.mp3">
+      <option name="closed" value="true" />
+      <created>1709689881735</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709689881735</updated>
+    </task>
+    <task id="LOCAL-00005" summary="pops.mp3">
+      <option name="closed" value="true" />
+      <created>1709690015014</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709690015014</updated>
+    </task>
+    <task id="LOCAL-00006" summary="pops.mp3">
+      <option name="closed" value="true" />
+      <created>1709693381005</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709693381005</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
